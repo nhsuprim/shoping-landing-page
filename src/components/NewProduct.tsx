@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React from "react";
+import jacket from "../../public/images/jacket.jpg";
 
 const NewProduct = () => {
     const data = [
@@ -58,8 +60,10 @@ const NewProduct = () => {
                         className="card bg-base-100 w-96 shadow-xl mx-auto"
                     >
                         <figure className="pt-10 ">
-                            <img
-                                src={product.image}
+                            <Image
+                                width={300}
+                                height={300}
+                                src={jacket}
                                 alt={product.name}
                                 className="rounded-xl object-cover h-48 w-fit"
                             />

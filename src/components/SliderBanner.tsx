@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import Image from "next/image";
 
 const SliderBanner = () => {
     return (
@@ -29,9 +30,33 @@ const SliderBanner = () => {
                 className="mySwiper mx-auto px-4 lg:px-24"
             >
                 <SwiperSlide>
-                    <img
+                    <Image
                         className="w-full"
                         src="https://shopping-web-app.vercel.app/_next/image?url=%2Fbanner-2.jpg&w=2048&q=75"
+                        alt=""
+                        height={100}
+                        width={100}
+                    />
+                    <div className="absolute bottom-10 left-4 lg:bottom-40 lg:left-10 space-y-4 lg:space-y-6">
+                        <h2 className="text-2xl lg:text-4xl font-semibold text-accent">
+                            Tranding Item
+                        </h2>
+                        <p className="uppercase text-2xl lg:text-4xl font-bold">
+                            Womens latest <br /> fashion sale
+                        </p>
+                        <p className="text-gray-500 text-xl lg:text-3xl font-semibold">
+                            Starting From $50
+                        </p>
+                        <button className="border border-black rounded-lg p-2 lg:p-4 uppercase font-semibold text-accent">
+                            SHOP Now
+                        </button>
+                    </div>
+                </SwiperSlide>
+                {/* <SwiperSlide>
+                    <Image
+                        className="w-full"
+                        src="https://shopping-web-app.vercel.app/_next/image?url=%2Fbanner-2.jpg&w=2048&q=75"
+                        alt=""
                     />
                     <div className="absolute bottom-10 left-4 lg:bottom-40 lg:left-10 space-y-4 lg:space-y-6">
                         <h2 className="text-2xl lg:text-4xl font-semibold text-accent">
@@ -49,9 +74,10 @@ const SliderBanner = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img
+                    <Image
                         className="w-full"
                         src="https://shopping-web-app.vercel.app/_next/image?url=%2Fbanner-2.jpg&w=2048&q=75"
+                        alt=""
                     />
                     <div className="absolute bottom-10 left-4 lg:bottom-40 lg:left-10 space-y-4 lg:space-y-6">
                         <h2 className="text-2xl lg:text-4xl font-semibold text-accent">
@@ -69,9 +95,10 @@ const SliderBanner = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img
+                    <Image
                         className="w-full"
                         src="https://shopping-web-app.vercel.app/_next/image?url=%2Fbanner-2.jpg&w=2048&q=75"
+                        alt=""
                     />
                     <div className="absolute bottom-10 left-4 lg:bottom-40 lg:left-10 space-y-4 lg:space-y-6">
                         <h2 className="text-2xl lg:text-4xl font-semibold text-accent">
@@ -87,27 +114,7 @@ const SliderBanner = () => {
                             SHOP Now
                         </button>
                     </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img
-                        className="w-full"
-                        src="https://shopping-web-app.vercel.app/_next/image?url=%2Fbanner-2.jpg&w=2048&q=75"
-                    />
-                    <div className="absolute bottom-10 left-4 lg:bottom-40 lg:left-10 space-y-4 lg:space-y-6">
-                        <h2 className="text-2xl lg:text-4xl font-semibold text-accent">
-                            Tranding Item
-                        </h2>
-                        <p className="uppercase text-2xl lg:text-4xl font-bold">
-                            Womens latest <br /> fashion sale
-                        </p>
-                        <p className="text-gray-500 text-xl lg:text-3xl font-semibold">
-                            Starting From $50
-                        </p>
-                        <button className="border border-black rounded-lg p-2 lg:p-4 uppercase font-semibold text-accent">
-                            SHOP Now
-                        </button>
-                    </div>
-                </SwiperSlide>
+                </SwiperSlide> */}
             </Swiper>
         </div>
     );
